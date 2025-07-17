@@ -65,3 +65,7 @@ def signup_for_activity(activity_name: str, email: str):
     # Add student
     activity["participants"].append(email)
     return {"message": f"Signed up {email} for {activity_name}"}
+
+def filter_even_numbers(numbers: list[int]) -> list[int]:
+        """Return a list of even numbers from the given list."""
+        return [num for num in numbers if num % 2 == 0]
